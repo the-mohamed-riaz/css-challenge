@@ -1,0 +1,121 @@
+:root {
+  --scale: 4;
+}
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  /* position: relative;
+  bottom: 9rem; */
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(5rem * var(--scale));
+  height: calc(3rem * var(--scale));
+}
+
+.color {
+  width: 100%;
+  height: calc(3rem * var(--scale));
+}
+.orange {
+  background-color: orange;
+}
+.white {
+  background-color: white;
+}
+.green {
+  background-color: green;
+}
+
+.chakara {
+  height: calc(0.8rem * var(--scale));
+  width: calc(0.8rem * var(--scale));
+  border-radius: 50%;
+  border: 1px solid rgb(8, 0, 102);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spokes:nth-child(1) {
+  --i: 1;
+}
+.spokes:nth-child(2) {
+  --i: 2;
+}
+.spokes:nth-child(3) {
+  --i: 3;
+}
+.spokes:nth-child(4) {
+  --i: 4;
+}
+.spokes:nth-child(5) {
+  --i: 5;
+}
+.spokes:nth-child(6) {
+  --i: 6;
+}
+.spokes:nth-child(7) {
+  --i: 7;
+}
+.spokes:nth-child(8) {
+  --i: 8;
+}
+.spokes:nth-child(9) {
+  --i: 9;
+}
+.spokes:nth-child(10) {
+  --i: 10;
+}
+.spokes:nth-child(11) {
+  --i: 11;
+}
+.spokes:nth-child(12) {
+  --i: 12;
+}
+
+.spokes {
+  position: absolute;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 1px;
+  height: calc(0.75rem * var(--scale));
+  background-color: rgb(8, 0, 102);
+  transform-origin: center;
+  transform: rotate(calc(15deg * (var(--i) - 1)));
+}
+
+.scalingPanel {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem 1rem;
+  padding: 2rem 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 1rem;
+  z-index: 3;
+}
+
+.label {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 3rem;
+  right: 45vw;
+}
